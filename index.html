@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>REGISTRO</title>
+</head>
+
+<body>
+    <header>FORMULARIO DE REGISTRO</header>
+    <form action="">
+        <label for="nom">Introducir Nombre</label>
+        <input type="text" id="nom" name="nombre" placeholder="Escribe tu Nombre" size="30" maxlength="25" required>
+
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" size="30" maxlength="25"
+            required>
+
+        <label for="cla">Introducir Clave</label>
+        <input type="password" id="cla" name="cla" placeholder="Mínimo 8 caracteres" size="10" maxlength="8" required>
+
+        <label for="city">Ciudades de Bolivia</label>
+        <select name="city" id="city">
+            <option value="lp">La Paz</option>
+            <option value="ch">Cochabamba</option>
+            <option value="sc">Santa Cruz</option>
+            <option value="su">Sucre</option>
+        </select>
+
+        <label for="obs">Observaciones</label>
+        <textarea name="obs" id="obs" rows="5" cols="30"></textarea>
+
+        <label for="edad">Edad</label>
+        <input type="number" step="1" min="1" max="100">
+
+        <label for="est">Estado Civil</label>
+        <input type="radio" id="est1" name="est" value="soltero">
+        <label for="est1">Soltero</label>
+        <input type="radio" id="est2" name="est" value="casado">
+        <label for="est2">Casado</label>
+        <input type="radio" id="est3" name="est" value="divorciado">
+        <label for="est3">Divorciado</label>
+
+        <label for="id">Idiomas</label>
+        <input type="checkbox" id="id1" name="id1" value="Ingles">
+        <label for="id1"> Inglés</label>
+        <input type="checkbox" id="id2" name="id2" value="Español">
+        <label for="id2"> Español</label>
+
+        <div class="form-buttons">
+            <input type="submit" value="Registrar">
+            <input type="reset" value="Limpiar">
+        </div>
+    </form>
+</body>
+
+</html>
